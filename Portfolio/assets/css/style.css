@@ -164,7 +164,6 @@ a:hover {
     /* TABLET HEADER*/
     .header {
         margin-top: 30px;
-        /* margin-bottom: 90px; */
     }
 
     .header__home {
@@ -195,7 +194,6 @@ a:hover {
 
     .hero__content picture {
         order: 2;
-/*         margin-left: -100px; */
     }
 
     .hero__image {
@@ -222,7 +220,6 @@ a:hover {
     }
 
     .hero__description {
-        /* width: 70%; */
         margin-bottom: 34px;
     }
 }
@@ -239,14 +236,32 @@ a:hover {
         padding-right: 30px;
     }
 
+    .hero {
+        margin-top: 0;
+    }
+
     .hero__wrapper {
         position: relative;
-        padding-bottom: 260px;
+        padding-bottom: 100px;
+    }
+
+    .hero__content {
+        align-items: flex-start;
+        margin-right: auto;
+    }
+
+    .hero__content picture {
+        margin-left: -80px;
     }
 
     .hero__image {
-        /* width: 445px; */
-        translate: 0 -199px;
+        margin-top: -199px;
+    }
+
+    .hero__text {
+        margin-top: 0;
+        margin-right: 0;
+        flex: 1;
     }
 
     .hero__headline {
