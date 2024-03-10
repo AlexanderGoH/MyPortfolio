@@ -42,6 +42,7 @@ h1 {
     font-size: 2.5rem;
     font-size: clamp(2.5rem, 0.7rem + 7.68vw, 5.5rem);
     letter-spacing: -0.028em;
+    line-height: 1.1;
 }
 
 h1 > span {
@@ -153,16 +154,17 @@ a:hover {
 
 
 
-/* 600px */
-@media (min-width: 37.5em){ 
+/* 640px */
+@media (min-width: 40em){ 
 
     .wrapper {
         width: calc(100% - 3.75rem);
     }
 
+    /* TABLET HEADER*/
     .header {
         margin-top: 30px;
-        margin-bottom: 90px;
+        /* margin-bottom: 90px; */
     }
 
     .header__home {
@@ -176,12 +178,30 @@ a:hover {
         text-align: left;  
     }
 
+    /* TABLET HERO */
+    .hero {
+        margin-top: -62px;
+    }
+
     .hero__wrapper {
         padding-bottom: 60px;
     }
 
+    .hero__content {
+        display: flex;
+        align-items: flex-start;
+        margin-right: -30px;
+    }
+
+    .hero__content picture {
+        order: 2;
+/*         margin-left: -100px; */
+    }
+
     .hero__image {
-        width: 323px;
+        position: relative;
+        width: 42vw;
+        max-width: 445px;
         height: auto;
         left: auto;
         right: 0;
@@ -189,9 +209,12 @@ a:hover {
     }
 
     .hero__text {
-        margin-top: 0;
+        margin-top: 90px;
         text-align: left;
+        margin-right: -30px;
+        flex: 1 0 50vw;
         width: 62vw;
+        z-index: 1;
     }
 
     .hero__headline {
@@ -199,6 +222,7 @@ a:hover {
     }
 
     .hero__description {
+        /* width: 70%; */
         margin-bottom: 34px;
     }
 }
@@ -217,10 +241,11 @@ a:hover {
 
     .hero__wrapper {
         position: relative;
+        padding-bottom: 260px;
     }
 
     .hero__image {
-        width: 445px;
+        /* width: 445px; */
         translate: 0 -199px;
     }
 
@@ -229,6 +254,7 @@ a:hover {
     }
 
     .hero__description {
+        width: 38ch;
         margin-bottom: 66px;
     }
 }
