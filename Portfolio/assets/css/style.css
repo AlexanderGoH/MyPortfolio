@@ -234,6 +234,39 @@ img {
     margin-inline-end: 30px;
 }
 
+/* CONTACT */
+.contact {}
+
+.contact__wrapper {}
+
+.contact__text {
+    text-align: center;
+}
+
+.contact__headline {}
+
+.contact__description {}
+
+.contact__form {}
+
+.contact__control {}
+
+.contact__control input {}
+
+.contact__control textarea {}
+
+.contact__control input, .contact__control textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--text1);
+    width: 100%;
+}
+
+.contact__control > *::placeholder {
+    color: var(--text1);
+    opacity: 0.5;
+    text-transform: uppercase;
+}
 
 /* 640px */
 @media (min-width: 40em){ 
