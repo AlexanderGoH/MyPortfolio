@@ -252,12 +252,13 @@ img {
 
 .contact__form {}
 
-.contact__control {}
+.contact__control {
+    margin-block-end: 16px;
+}
 
 .contact__control input, .contact__control textarea {
     background: transparent;
     border: none;
-    margin-block-end: 16px;
     padding-block: 16px;
     padding-inline: 24px;
     border-bottom: 1px solid var(--text1);
@@ -272,9 +273,8 @@ img {
     outline: none;
 }
 
-.contact__control input:invalid, .contact__control textarea:invalid {
-    outline-color: var(--invalid);
-    /* outline: none; */
+input:focus-visible:invalid, textarea:focus-visible:invalid {
+    border-bottom-color: var(--invalid);
 }
 
 .contact__control input {
