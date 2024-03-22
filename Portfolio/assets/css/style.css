@@ -1,6 +1,6 @@
 :root {
     --bg-body: #151515;
-    --bg-contact: #242424;
+    --bg-body2: #242424;
     --accent: #4ee1a0;
     --text1: #ffffff;
     --text2: #d9d9d9;
@@ -238,19 +238,23 @@ img {
 }
 
 /* CONTACT */
-.contact {}
-
-.contact__wrapper {}
-
-.contact__text {
-    text-align: center;
+.contact {
+    background-color: var(--bg-body2);
 }
 
-.contact__headline {}
+.contact__wrapper {
+    border-bottom: 1px solid var(--text1);
+    padding-block: 84px;
+}
+
+.contact__headline {
+    margin-block-end: 20px;
+}
 
 .contact__description {}
 
-.contact__form {}
+.contact__form {
+}
 
 .contact__control {
     margin-block-end: 16px;
@@ -299,6 +303,12 @@ input:focus-visible:invalid, textarea:focus-visible:invalid {
 .contact__control button {
     background-color: transparent;
     border: none;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--bg-body2);
+    padding-block: 40px 60px;
 }
 
 /* 640px */
@@ -388,6 +398,11 @@ input:focus-visible:invalid, textarea:focus-visible:invalid {
     .projects__item {
         grid-column: span 1;
     }
+
+    /* TABLET FOOTER */
+    .footer {
+        padding-block: 30px 40px;
+    }
 }
 
 /* 1000px */
@@ -449,6 +464,10 @@ input:focus-visible:invalid, textarea:focus-visible:invalid {
     }
 
     /* DESKTOP PROJECTS */
+    .projects__wrapper {
+        padding-block: 140px;
+    }
+
     .projects__grid {
         gap: 69px 30px;
     }
@@ -498,7 +517,31 @@ input:focus-visible:invalid, textarea:focus-visible:invalid {
         transition: opacity 400ms ease-in-out;
     }
 
-   /*  .projects__links:hover ~ .projects__picture::after {
-        opacity: 0.5;
-    } */
+    /* DESKTOP CONTACT */
+    .contact__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 27.8rem);
+        justify-content: space-between;
+    }
+
+    .contact__headline {
+        margin-block-end: 36px;
+    }
+
+    /* DESKTOP FOOTER */
+    .footer {
+        padding-block: 47px 92px;
+    }
+}
+
+/* 999.98px */
+@media(max-width: 62.49875em){
+    /* MOBILE AND TABLET CONTACT */
+    .contact__wrapper {
+        max-width: 27.8rem;
+    }
+
+    .contact__text {
+        text-align: center;
+    }
 }
