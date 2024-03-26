@@ -119,9 +119,6 @@ img {
 }
 
 /* HERO */
-.hero {
-
-}
 
 .hero__wrapper {
     padding-bottom: 80px;
@@ -151,14 +148,8 @@ img {
     margin-block-end: 24px;
 }
 
-.hero__contact {
-
-}
-
 /* SKILLS */
-.skills {
 
-}
 
 .skills__wrapper {
     display: grid;
@@ -184,7 +175,6 @@ img {
 }
 
 /* PROJECTS */
-.projects {}
 
 .projects__wrapper {
     padding-block: 80px;
@@ -231,8 +221,6 @@ img {
     margin-inline-end: 18px;
 }
 
-.projects__links {}
-
 .projects__links a {
     margin-inline-end: 30px;
 }
@@ -249,11 +237,6 @@ img {
 
 .contact__headline {
     margin-block-end: 20px;
-}
-
-.contact__description {}
-
-.contact__form {
 }
 
 .contact__control {
@@ -281,9 +264,6 @@ input:focus-visible:invalid, textarea:focus-visible:invalid {
     border-bottom-color: var(--invalid);
 }
 
-.contact__control input {
-
-}
 
 .contact__control textarea {
     margin-block-end: 32px;
