@@ -177,12 +177,16 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
-    border-bottom: 1px solid var(--text2);
+    border-top: 1px solid var(--text2);
     padding-block: 40px;
 }
 
 .education__item {
     text-align: center;
+}
+
+.education__headline {
+    font-size: clamp(2rem, 0.33rem + 7.11vw, 4.5rem);
 }
 
 /* PROJECTS */
